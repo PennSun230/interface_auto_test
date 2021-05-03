@@ -71,17 +71,12 @@
             <version>2.12.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
+
 		  <dependency>
 			<groupId>com.rsa</groupId>
 			<artifactId>rsa</artifactId>
 			<version>1.0</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -92,6 +87,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
+                    <workingDirectory>.</workingDirectory>
                     <!-- 测试失败后，是否忽略并继续测试 -->
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
