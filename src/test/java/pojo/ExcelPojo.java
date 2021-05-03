@@ -6,32 +6,35 @@ import cn.afterturn.easypoi.excel.annotation.Excel ;
  * 柠檬班学习
  */
 public class ExcelPojo {
-    @Excel(name="序号(caseId)")
+    @Excel(name="caseId")
     private int caseId;
 
-    @Excel(name="接口模块(interface)")
+    @Excel(name="interfaceModule")
     private String interfaceName;
 
-    @Excel(name="用例标题(title)")
+    @Excel(name="caseTitle")
     private String title;
 
-    @Excel(name="请求头(requestHeader)")
+    @Excel(name="requestHeader")
     private String requestHeader;
 
-    @Excel(name="请求方式(method)")
+    @Excel(name="requestMethod")
     private String method;
 
-    @Excel(name="接口地址(url)")
+    @Excel(name="interfaceUrl")
     private String url;
 
-    @Excel(name="参数输入(inputParams)")
+    @Excel(name="inputParams")
     private String inputParams;
 
-    @Excel(name="期望返回结果(expected)")
+    @Excel(name="expectedResult")
     private String expected;
 
-    @Excel(name="提取返回数据(extract)")
+    @Excel(name="extractField")
     private String extractResult;
+
+    @Excel(name="databaseVerify")
+    private String dbAssert;
 
     public String getDbAssert() {
         return dbAssert;
@@ -41,8 +44,6 @@ public class ExcelPojo {
         this.dbAssert = dbAssert;
     }
 
-    @Excel(name="数据库校验")
-    private String dbAssert;
     public int getCaseId() {
         return caseId;
     }

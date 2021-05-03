@@ -3,6 +3,8 @@ package common;
 import cn.afterturn.easypoi.excel.ExcelImportUtil;
 import cn.afterturn.easypoi.excel.entity.ImportParams;
 import com.alibaba.fastjson.JSONObject;
+import com.lemon.encryption.RSAManager;
+
 import data.Constants;
 import data.EnvironmentConstant;
 import io.qameta.allure.Allure;
@@ -11,24 +13,27 @@ import io.restassured.config.JsonConfig;
 import io.restassured.config.LogConfig;
 import io.restassured.path.json.config.JsonPathConfig;
 import io.restassured.response.Response;
+import org.slf4j.ILoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import pojo.ExcelPojo;
 import util.JDBCUtils;
-
-import static io.restassured.RestAssured.given;
-
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.math.BigDecimal;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static io.restassured.RestAssured.given;
 
 /**
  * @author penn
@@ -41,8 +46,25 @@ public class BaseTest {
         RestAssured.config = RestAssured.config().jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL));
         RestAssured.baseURI = Constants.BASE_URI;
     }
+//    public String Sign(String token,Long timestamp) {
+//
+//        //sign参数
+//        //1、取token的前面50位
+//        String preStr = token.substring(0,50);
+//        //2、取到的结果拼接上timestamp
+//        String str = preStr+timestamp;
+//        //3、通过RSA加密算法对拼接的结果进行加密,得到sign签名
+//        String sign = null;
+//        try {
+//            sign = RSAManager.encryptWithBase64(str);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return sign;
+//    }
 
-    public Response request(ExcelPojo excelData,String interfaceModuleName) {
+
+    public Response request(ExcelPojo excelData, String interfaceModuleName) {
         String logFilePath;
         if(Constants.LOG_TO_FILE ){
             File dirPath =new File(System.getProperty("user.dir")+"\\log\\"+interfaceModuleName );
@@ -52,6 +74,7 @@ public class BaseTest {
             logFilePath =dirPath +"\\test"+excelData.getCaseId() +".log";
             PrintStream fileOutPutStream = null;
             try{
+                //PrintStream 是打印流的意思
                  fileOutPutStream= new PrintStream(new File(logFilePath) );
             }catch (FileNotFoundException fileNOtFound){
                 fileNOtFound.printStackTrace() ;
@@ -72,6 +95,7 @@ public class BaseTest {
         } else if (method.equalsIgnoreCase("patch")) {
             response = given().log().all().headers(requestHeaderMap).body(params).when().patch(url).then().log().all().extract().response();
         }
+//        这里面可以更好一些当报错的时候写log到allure报表当中
         if(Constants.LOG_TO_FILE )
             try{
                 Allure.addAttachment("接口请求响应信息",new FileInputStream(logFilePath));
@@ -80,6 +104,53 @@ public class BaseTest {
             }
         return response;
     }
+
+//    public Response requestV3(ExcelPojo excelData,String interfaceModuleName,String token) {
+//        String logFilePath;
+//        if(Constants.LOG_TO_FILE ){
+//            File dirPath =new File(System.getProperty("user.dir")+"\\log\\"+interfaceModuleName );
+//            if (!dirPath.exists()){
+//                dirPath.mkdirs() ;
+//            }
+//            logFilePath =dirPath +"\\test"+excelData.getCaseId() +".log";
+//            PrintStream fileOutPutStream = null;
+//            try{
+//                //PrintStream 是打印流的意思
+//                fileOutPutStream= new PrintStream(new File(logFilePath) );
+//            }catch (FileNotFoundException fileNOtFound){
+//                fileNOtFound.printStackTrace() ;
+//            }
+//            RestAssured.config =RestAssured.config.logConfig(LogConfig.logConfig().defaultStream(fileOutPutStream) ) ;
+//        }
+//
+//        String requestHeader = excelData.getRequestHeader();
+//        Map<String, Object> requestHeaderMap = JSONObject.parseObject(requestHeader, Map.class);
+//        String url = excelData.getUrl();
+//        String params = excelData.getInputParams();
+//        long timestamp = System.currentTimeMillis()/1000;
+//        String tokenV3 = Sign (token,timestamp);
+//        Map<String,Object>mapToken=JSONObject.parseObject(tokenV3, HashMap.class);
+//        mapToken.put("timestamp",timestamp) ;
+//        mapToken.put("sign",tokenV3) ;
+//        String tokenV3Json = JSONObject.toJSONString(mapToken);
+//        String method = excelData.getMethod();
+//        Response response = null;
+//        if (method.equalsIgnoreCase("get")) {
+//            response = given().log().all().headers(requestHeaderMap).when().get(url).then().log().all().extract().response();
+//        } else if (method.equalsIgnoreCase("post")) {
+//            response = given().log().all().headers(requestHeaderMap).body(tokenV3Json).when().post(url).then().log().all().extract().response();
+//        } else if (method.equalsIgnoreCase("patch")) {
+//            response = given().log().all().headers(requestHeaderMap).body(tokenV3Json).when().patch(url).then().log().all().extract().response();
+//        }
+////        这里面可以更好一些当报错的时候写log到allure报表当中
+//        if(Constants.LOG_TO_FILE )
+//            try{
+//                Allure.addAttachment("接口请求响应信息",new FileInputStream(logFilePath));
+//            }catch (FileNotFoundException e){
+//                e.printStackTrace() ;
+//            }
+//        return response;
+//    }
 
     public void assertResponse(ExcelPojo excelPojo,Response res){
         //断言
@@ -91,6 +162,7 @@ public class BaseTest {
                 Object expectedValue = expectedMap.get(key);
                 //获取接口返回的实际结果（jsonPath表达式）
                 Object actualValue = res.jsonPath().get(key);
+
                 Assert.assertEquals(actualValue, expectedValue);
             }
         }

@@ -1,20 +1,17 @@
-package testcase;
+package teststeps;
 
-import com.alibaba.fastjson.JSONObject;
 import common.BaseTest;
 import data.EnvironmentConstant;
+//import io.restassured.response.Response;
 import io.restassured.response.Response;
-import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pojo.ExcelPojo;
 import util.PhoneRandomUtil;
 
-import java.math.BigDecimal;
 import java.util.List;
-import java.util.Map;
-import java.util.logging.Logger;
 
 /**
  * @author penn
@@ -32,7 +29,7 @@ public class NewLoanTest extends BaseTest {
         EnvironmentConstant.environmentData .put("borrower_phone",borrowserPhone);
         EnvironmentConstant.environmentData.put("admin_phone",adminPhone);
         //读取用例数据-前面4条
-        List<ExcelPojo> list = readDataToSpecificRow(4,0,4) ;
+        List<ExcelPojo> list = readDataToSpecificRow(3,0,4) ;
         for (int i=0 ;i<list.size();i++){
             //发送请求
             ExcelPojo excelPojo = list.get(i);
@@ -48,7 +45,7 @@ public class NewLoanTest extends BaseTest {
 
     @DataProvider
     public Object[] getNewLoanData() {
-        List<ExcelPojo> listExcelData = readDataFromSpecificRow(4, 2);
+        List<ExcelPojo> listExcelData = readDataFromSpecificRow(3, 4);
         return listExcelData.toArray();
 
     }
@@ -59,5 +56,9 @@ public class NewLoanTest extends BaseTest {
         Response res = request(excelPojo,"NewLoan");
         //断言
         assertResponse(excelPojo, res);
+    }
+    @AfterTest
+    public void teardown(){
+
     }
 }
