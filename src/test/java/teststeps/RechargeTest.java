@@ -38,7 +38,7 @@ public class RechargeTest extends BaseTest {
     }
 
     @Test(dataProvider = "getRechargeData")
-    public void testLogin(ExcelPojo excelPojo) throws Exception {
+    public void testRecharge(ExcelPojo excelPojo) throws Exception {
         RSATool.signRequest();
         excelPojo = casesReplace(excelPojo);
         Response response = request(excelPojo, "Recharge");
@@ -61,6 +61,7 @@ public class RechargeTest extends BaseTest {
         List<ExcelPojo> listExcelData = readDataFromSpecificRow(2, 2);
         return listExcelData.toArray();
     }
+
     @AfterTest
     public void teardown(){
 
