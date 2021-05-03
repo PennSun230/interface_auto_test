@@ -9,7 +9,7 @@ public class Constants {
     //输出日志到控制台还是到日志文件中
     public static final boolean LOG_TO_FILE=true;
     //常量的命名都是大写的  //这里为什么是static,因为如果声明为static可以全局使用，不用实例化对象  //final是为了其他人对它修改
-    public static final String  Excel_File_PATH ="src\\test\\resources\\api_testcases_futureloan_v4.xls";
+    public static final String  Excel_File_PATH ="src\\test\\resources\\futureloan.xls";
 
     public static final String BASE_URI="http://api.lemonban.com/futureloan";
 
