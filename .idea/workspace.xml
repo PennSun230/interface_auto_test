@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80083510-82e6-45a6-a1c1-92c20e172458" name="Default Changelist" comment="" />
+    <list default="true" id="80083510-82e6-45a6-a1c1-92c20e172458" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gitRepo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -187,11 +189,11 @@
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="92" y="-988" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1619967093018" />
-    <state x="493" y="180" key="FileChooserDialogImpl" timestamp="1620034735074">
+    <state x="419" y="99" key="FileChooserDialogImpl" timestamp="1620145073473">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="740" y="-805" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1619974222820" />
-    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620034735074" />
+    <state x="419" y="99" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620145073473" />
     <state width="1237" height="323" key="GridCell.Tab.0.bottom" timestamp="1620139939134">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -220,9 +222,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620145006699" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1620144887338">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1620145434576">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620144887338" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620145434576" />
   </component>
 </project>
