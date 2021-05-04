@@ -1,0 +1,42 @@
+Request method:	POST
+Request URI:	http://api.lemonban.com/futureloan/member/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Lemonban-Media-Type=lemonban.v2
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile_phone": "13323854526",
+    "pwd": "lemon666"
+}
+HTTP/1.1 200 
+Server: nginx/1.4.2
+Date: Mon, 03 May 2021 03:33:25 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    "code": 0,
+    "msg": "OK",
+    "data": {
+        "id": 1000490446,
+        "leave_amount": 0.0,
+        "mobile_phone": "13323854526",
+        "reg_name": "",
+        "reg_time": "2021-05-03 11:33:21.0",
+        "type": 1,
+        "token_info": {
+            "token_type": "Bearer",
+            "expires_in": "2021-05-03 11:38:25",
+            "token": "eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTA0NDYsImV4cCI6MTYyMDAxMzEwNX0.x4Qj2V9K3nk8KTKDphhL0XgVhT1OhohX5_HfH_qjEMg-2lqUsUp2jWqf7XnJ4z8yQ-cptfbsg5xn48vv8f_DSg"
+        }
+    },
+    "copyright": "Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"
+}

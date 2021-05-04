@@ -1,0 +1,40 @@
+Request method:	POST
+Request URI:	http://api.lemonban.com/futureloan/member/recharge
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTA0NDksImV4cCI6MTYyMDAxMzEyN30.L5CrX49fDUxfl5nO7iCJFkOEkNm_i-CxwmiPSmLShGYIEZX3Q86GSBDCBk-Ho1dIteIS_4MHyFWNwIv2d7f6Jw
+				X-Lemonban-Media-Type=lemonban.v3
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "member_id": 1000490449,
+    "amount": 500000.0,
+    "timestamp": 1620012823,
+    "sign": "t5jXeSGvLO+3icd4iB5AyvCKwK3uZil0EPwdQdXKHkE+kYH2l5C5rkXTeXATUIyF//sJavnZFYVL\rUl/RMRy6KxZi2uXi+Y6o8fFbEiUONVleiU/0yRaziHzmqq8cOPZKnlJSCeVDIblsvqkXhZi/piHJ\rVHb3KWvagZOyp7Zhq+g=\r"
+}
+HTTP/1.1 200 
+Server: nginx/1.4.2
+Date: Mon, 03 May 2021 03:33:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    "code": 0,
+    "msg": "OK",
+    "data": {
+        "id": 1000490449,
+        "leave_amount": 500000.0,
+        "mobile_phone": "13307133811",
+        "reg_name": "",
+        "reg_time": "2021-05-03 11:33:47.0",
+        "type": 1
+    },
+    "copyright": "Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"
+}

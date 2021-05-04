@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 23.385 s <<< FAILURE! - in TestSuite
+testNewLoan(teststeps.NewLoanTest)  Time elapsed: 0.296 s  <<< FAILURE!
+java.lang.AssertionError: expected [2] but found [5]
+	at teststeps.NewLoanTest.testNewLoan(NewLoanTest.java:58)
+
+testNewLoan(teststeps.NewLoanTest)  Time elapsed: 0.687 s  <<< FAILURE!
+java.lang.AssertionError: expected [6] but found [5]
+	at teststeps.NewLoanTest.testNewLoan(NewLoanTest.java:58)
+

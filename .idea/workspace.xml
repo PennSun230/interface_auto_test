@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="80083510-82e6-45a6-a1c1-92c20e172458" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\m2\repository" />
+        <option name="mavenHome" value="D:\lemon\lemon_class\Maven" />
+        <option name="userSettingsFile" value="D:\lemon_class\Maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qhh6sEzAsTWoGqrfFsKW3m7U0z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lemon\lemon_class\APIcode\Myapiproject\src\test\resources" />
+      <recent name="D:\lemon\lemon_class\APIcode\Myapiproject" />
+      <recent name="D:\lemon_class\Myproject\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\lemon\lemon_class\APIcode\Myapiproject\src\test\resources" />
+      <recent name="D:\lemon\lemon_class\APIcode\Myapiproject\src\test\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/lemon/lemon_class/APIcode/Myapiproject/testng.xml">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: To verify login scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
+      <option name="GLUE" value="teststeps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Myapiproject" />
+      <option name="NAME_FILTER" value="^To verify login scenario$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^To verify login scenario$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: To verify login scenario" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/lemon/lemon_class/APIcode/Myapiproject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Myapiproject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Myapiproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="teststeps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="teststeps" />
+      <option name="MAIN_CLASS_NAME" value="teststeps.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewLoanTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Myapiproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="teststeps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="teststeps" />
+      <option name="MAIN_CLASS_NAME" value="teststeps.NewLoanTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RechargeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Myapiproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="teststeps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="teststeps" />
+      <option name="MAIN_CLASS_NAME" value="teststeps.RechargeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/lemon/lemon_class/APIcode/Myapiproject/testng.xml" />
+        <item itemvalue="TestNG.RechargeTest" />
+        <item itemvalue="TestNG.NewLoanTest" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="Cucumber Java.Scenario: To verify login scenario" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80083510-82e6-45a6-a1c1-92c20e172458" name="Default Changelist" comment="" />
+      <created>1617537558993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617537558993</updated>
+      <workItem from="1619709076582" duration="4907000" />
+      <workItem from="1619716077950" duration="104000" />
+      <workItem from="1619716231802" duration="17000" />
+      <workItem from="1619764611783" duration="2145000" />
+      <workItem from="1619766890508" duration="4350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="-988" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1619967093018">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="92" y="-988" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1619967093018" />
+    <state x="493" y="180" key="FileChooserDialogImpl" timestamp="1620034735074">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="740" y="-805" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1619974222820" />
+    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620034735074" />
+    <state width="1237" height="323" key="GridCell.Tab.0.bottom" timestamp="1620139939134">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1620054181590" />
+    <state width="1237" height="323" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620139939134" />
+    <state width="1237" height="323" key="GridCell.Tab.0.center" timestamp="1620139939134">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1620054181590" />
+    <state width="1237" height="323" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620139939134" />
+    <state width="1237" height="323" key="GridCell.Tab.0.left" timestamp="1620139939134">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1620054181590" />
+    <state width="1237" height="323" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620139939134" />
+    <state width="1237" height="323" key="GridCell.Tab.0.right" timestamp="1620139939134">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1620054181590" />
+    <state width="1237" height="323" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620139939134" />
+    <state x="490" y="-905" key="Maven.ArtifactSearchDialog" timestamp="1619974459207">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="490" y="-905" key="Maven.ArtifactSearchDialog/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1619974459207" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1620145006699">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620145006699" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1620144887338">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1620144887338" />
+  </component>
+</project>

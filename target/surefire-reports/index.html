@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test_Suite">
+              <span class="suite-name border-failed">Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_Suite">
+                    <span>D:\lemon\lemon_class\APIcode\Myapiproject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">40 methods, 2 failed,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods failed suite-Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods failed suite-Test_Suite"> (show)</a> <!-- show-methods failed suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=7, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款500000、年化率2、借款周期10天、竞标天数2天&#039;, requestHeade...)">testNewLoan(ExcelPojo{caseId=7, interfaceName='addLoan', title='正常加标-借款500000、年化率2、借款周期10天、竞标天数2天', requestHeade...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=8, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款100000、年化率23、借款周期45天、竞标天数5天&#039;, requestHead...)">testNewLoan(ExcelPojo{caseId=8, interfaceName='addLoan', title='正常加标-借款100000、年化率23、借款周期45天、竞标天数5天', requestHead...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods passed suite-Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods passed suite-Test_Suite"> (show)</a> <!-- show-methods passed suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=4, interfaceName=&#039;login&#039;, title=&#039;手机号为10位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">testLogin(ExcelPojo{caseId=4, interfaceName='login', title='手机号为10位', requestHeader='{"X-Lemonban-Media-Type":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=6, interfaceName=&#039;login&#039;, title=&#039;手机号包含非数字&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">testLogin(ExcelPojo{caseId=6, interfaceName='login', title='手机号包含非数字', requestHeader='{"X-Lemonban-Media-Type"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=7, interfaceName=&#039;login&#039;, title=&#039;不存在的号段&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;...)">testLogin(ExcelPojo{caseId=7, interfaceName='login', title='不存在的号段', requestHeader='{"X-Lemonban-Media-Type":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=9, interfaceName=&#039;login&#039;, title=&#039;密码为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;le...)">testLogin(ExcelPojo{caseId=9, interfaceName='login', title='密码为空', requestHeader='{"X-Lemonban-Media-Type":"le...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=5, interfaceName=&#039;login&#039;, title=&#039;手机号为12位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">testLogin(ExcelPojo{caseId=5, interfaceName='login', title='手机号为12位', requestHeader='{"X-Lemonban-Media-Type":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=11, interfaceName=&#039;login&#039;, title=&#039;密码为17位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">testLogin(ExcelPojo{caseId=11, interfaceName='login', title='密码为17位', requestHeader='{"X-Lemonban-Media-Type":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=13, interfaceName=&#039;login&#039;, title=&#039;密码错误-过长&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">testLogin(ExcelPojo{caseId=13, interfaceName='login', title='密码错误-过长', requestHeader='{"X-Lemonban-Media-Type"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=8, interfaceName=&#039;login&#039;, title=&#039;输入未注册的手机号&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">testLogin(ExcelPojo{caseId=8, interfaceName='login', title='输入未注册的手机号', requestHeader='{"X-Lemonban-Media-Type...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=14, interfaceName=&#039;login&#039;, title=&#039;密码错误-过短&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">testLogin(ExcelPojo{caseId=14, interfaceName='login', title='密码错误-过短', requestHeader='{"X-Lemonban-Media-Type"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=2, interfaceName=&#039;login&#039;, title=&#039;正常登录&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;le...)">testLogin(ExcelPojo{caseId=2, interfaceName='login', title='正常登录', requestHeader='{"X-Lemonban-Media-Type":"le...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=3, interfaceName=&#039;login&#039;, title=&#039;手机号为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;l...)">testLogin(ExcelPojo{caseId=3, interfaceName='login', title='手机号为空', requestHeader='{"X-Lemonban-Media-Type":"l...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=10, interfaceName=&#039;login&#039;, title=&#039;密码为7位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;...)">testLogin(ExcelPojo{caseId=10, interfaceName='login', title='密码为7位', requestHeader='{"X-Lemonban-Media-Type":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.LoginTest" hash-for-method="testLogin(ExcelPojo{caseId=12, interfaceName=&#039;login&#039;, title=&#039;密码错误-不区分大小写&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">testLogin(ExcelPojo{caseId=12, interfaceName='login', title='密码错误-不区分大小写', requestHeader='{"X-Lemonban-Media-T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=11, interfaceName=&#039;addLoan&#039;, title=&#039;标题为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">testNewLoan(ExcelPojo{caseId=11, interfaceName='addLoan', title='标题为空', requestHeader='{"X-Lemonban-Media-Type":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=5, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款1000、年化率1%、借款周期1个月、竞标天数1天&#039;, requestHeader...)">testNewLoan(ExcelPojo{caseId=5, interfaceName='addLoan', title='正常加标-借款1000、年化率1%、借款周期1个月、竞标天数1天', requestHeader...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=16, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为非100整除的整数&#039;, requestHeader=&#039;{&quot;X-Lemonban-Me...)">testNewLoan(ExcelPojo{caseId=16, interfaceName='addLoan', title='借款金额为非100整除的整数', requestHeader='{"X-Lemonban-Me...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=18, interfaceName=&#039;addLoan&#039;, title=&#039;年利率为0&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">testNewLoan(ExcelPojo{caseId=18, interfaceName='addLoan', title='年利率为0', requestHeader='{"X-Lemonban-Media-Type"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=27, interfaceName=&#039;addLoan&#039;, title=&#039;竞标天数为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">testNewLoan(ExcelPojo{caseId=27, interfaceName='addLoan', title='竞标天数为空', requestHeader='{"X-Lemonban-Media-Type...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=29, interfaceName=&#039;addLoan&#039;, title=&#039;竞标天数输入0天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">testNewLoan(ExcelPojo{caseId=29, interfaceName='addLoan', title='竞标天数输入0天', requestHeader='{"X-Lemonban-Media-Ty...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=20, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">testNewLoan(ExcelPojo{caseId=20, interfaceName='addLoan', title='借款期限为空', requestHeader='{"X-Lemonban-Media-Type...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=26, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限类型输入非1、2&#039;, requestHeader=&#039;{&quot;X-Lemonban-Medi...)">testNewLoan(ExcelPojo{caseId=26, interfaceName='addLoan', title='借款期限类型输入非1、2', requestHeader='{"X-Lemonban-Medi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=12, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">testNewLoan(ExcelPojo{caseId=12, interfaceName='addLoan', title='借款金额为空', requestHeader='{"X-Lemonban-Media-Type...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=21, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为0个月&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">testNewLoan(ExcelPojo{caseId=21, interfaceName='addLoan', title='借款期限为0个月', requestHeader='{"X-Lemonban-Media-Ty...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=25, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限类型不输入&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">testNewLoan(ExcelPojo{caseId=25, interfaceName='addLoan', title='借款期限类型不输入', requestHeader='{"X-Lemonban-Media-T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=13, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为负数&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">testNewLoan(ExcelPojo{caseId=13, interfaceName='addLoan', title='借款金额为负数', requestHeader='{"X-Lemonban-Media-Typ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=23, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为9天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">testNewLoan(ExcelPojo{caseId=23, interfaceName='addLoan', title='借款期限为9天', requestHeader='{"X-Lemonban-Media-Typ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=6, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款1100、年化率24、借款周期36个月、竞标天数10天&#039;, requestHead...)">testNewLoan(ExcelPojo{caseId=6, interfaceName='addLoan', title='正常加标-借款1100、年化率24、借款周期36个月、竞标天数10天', requestHead...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=14, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为0&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">testNewLoan(ExcelPojo{caseId=14, interfaceName='addLoan', title='借款金额为0', requestHeader='{"X-Lemonban-Media-Type...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=24, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为46天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">testNewLoan(ExcelPojo{caseId=24, interfaceName='addLoan', title='借款期限为46天', requestHeader='{"X-Lemonban-Media-Ty...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=22, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为37个月&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">testNewLoan(ExcelPojo{caseId=22, interfaceName='addLoan', title='借款期限为37个月', requestHeader='{"X-Lemonban-Media-T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=9, interfaceName=&#039;addLoan&#039;, title=&#039;借款人id为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">testNewLoan(ExcelPojo{caseId=9, interfaceName='addLoan', title='借款人id为空', requestHeader='{"X-Lemonban-Media-Type...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=28, interfaceName=&#039;addLoan&#039;, title=&#039;竞标天数输入超出10天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media...)">testNewLoan(ExcelPojo{caseId=28, interfaceName='addLoan', title='竞标天数输入超出10天', requestHeader='{"X-Lemonban-Media...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=10, interfaceName=&#039;addLoan&#039;, title=&#039;借款人id不存在&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">testNewLoan(ExcelPojo{caseId=10, interfaceName='addLoan', title='借款人id不存在', requestHeader='{"X-Lemonban-Media-Ty...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=17, interfaceName=&#039;addLoan&#039;, title=&#039;年利率为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">testNewLoan(ExcelPojo{caseId=17, interfaceName='addLoan', title='年利率为空', requestHeader='{"X-Lemonban-Media-Type"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=19, interfaceName=&#039;addLoan&#039;, title=&#039;年利率大于24&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">testNewLoan(ExcelPojo{caseId=19, interfaceName='addLoan', title='年利率大于24', requestHeader='{"X-Lemonban-Media-Typ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.NewLoanTest" hash-for-method="testNewLoan(ExcelPojo{caseId=15, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为小数&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">testNewLoan(ExcelPojo{caseId=15, interfaceName='addLoan', title='借款金额为小数', requestHeader='{"X-Lemonban-Media-Typ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.RechargeTest" hash-for-method="testRecharge(ExcelPojo{caseId=3, interfaceName=&#039;recharge&#039;, title=&#039;正常充值-50W&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">testRecharge(ExcelPojo{caseId=3, interfaceName='recharge', title='正常充值-50W', requestHeader='{"X-Lemonban-Media-Ty...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="teststeps.RechargeTest" hash-for-method="testRecharge(ExcelPojo{caseId=4, interfaceName=&#039;recharge&#039;, title=&#039;正常充值-0.01&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">testRecharge(ExcelPojo{caseId=4, interfaceName='recharge', title='正常充值-0.01', requestHeader='{"X-Lemonban-Media-T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_Suite" class="panel Test_Suite">
+          <div class="suite-Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teststeps.NewLoanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=7, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款500000、年化率2、借款周期10天、竞标天数2天&#039;, requestHeade...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=7, interfaceName='addLoan', title='正常加标-借款500000、年化率2、借款周期10天、竞标天数2天', requestHeade...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=7, interfaceName='addLoan', title='正常加标-借款500000、年化率2、借款周期10天、竞标天数2天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买测试课程_3",
+    "amount":500000.00,
+    "loan_rate":2.0,
+    "loan_term":10,
+    "loan_date_type":2,
+    "bidding_days":2
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+    "data.amount": 500000.0,
+    "data.bidding_days": 2,
+    "data.loan_term": 10,
+    "data.title": "购买测试课程_3",
+    "data.loan_rate": 2.0,
+    "data.loan_date_type": 2,
+    "data.status": 1
+}', extractResult='null', dbAssert='null'})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [5]
+	at common.BaseTest.assertResponse(BaseTest.java:103)
+	at teststeps.NewLoanTest.testNewLoan(NewLoanTest.java:58)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=8, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款100000、年化率23、借款周期45天、竞标天数5天&#039;, requestHead...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=8, interfaceName='addLoan', title='正常加标-借款100000、年化率23、借款周期45天、竞标天数5天', requestHead...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=8, interfaceName='addLoan', title='正常加标-借款100000、年化率23、借款周期45天、竞标天数5天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买测试课程_4",
+    "amount":100000.00,
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":6
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+    "data.amount": 100000.0,
+    "data.bidding_days": 6,
+    "data.loan_term": 45,
+    "data.title": "购买测试课程_4",
+    "data.loan_rate": 23.0,
+    "data.loan_date_type": 2,
+    "data.status": 1
+}', extractResult='null', dbAssert='null'})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [6] but found [5]
+	at common.BaseTest.assertResponse(BaseTest.java:103)
+	at teststeps.NewLoanTest.testNewLoan(NewLoanTest.java:58)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-failed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">teststeps.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=4, interfaceName=&#039;login&#039;, title=&#039;手机号为10位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=4, interfaceName='login', title='手机号为10位', requestHeader='{"X-Lemonban-Media-Type":...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=4, interfaceName='login', title='手机号为10位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "1581554176",
+  "pwd": "lemon666",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=6, interfaceName=&#039;login&#039;, title=&#039;手机号包含非数字&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=6, interfaceName='login', title='手机号包含非数字', requestHeader='{"X-Lemonban-Media-Type"...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=6, interfaceName='login', title='手机号包含非数字', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "1581554176a",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=7, interfaceName=&#039;login&#039;, title=&#039;不存在的号段&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=7, interfaceName='login', title='不存在的号段', requestHeader='{"X-Lemonban-Media-Type":"...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=7, interfaceName='login', title='不存在的号段', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "11015541764",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=9, interfaceName=&#039;login&#039;, title=&#039;密码为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;le...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=9, interfaceName='login', title='密码为空', requestHeader='{"X-Lemonban-Media-Type":"le...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=9, interfaceName='login', title='密码为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541764",
+  "pwd": ""
+}', expected='{
+  "code": 1,
+  "msg": "密码为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=5, interfaceName=&#039;login&#039;, title=&#039;手机号为12位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=5, interfaceName='login', title='手机号为12位', requestHeader='{"X-Lemonban-Media-Type":...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=5, interfaceName='login', title='手机号为12位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "158155417643",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=11, interfaceName=&#039;login&#039;, title=&#039;密码为17位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=11, interfaceName='login', title='密码为17位', requestHeader='{"X-Lemonban-Media-Type":...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=11, interfaceName='login', title='密码为17位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541764",
+  "pwd": "lemon123456789012"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=13, interfaceName=&#039;login&#039;, title=&#039;密码错误-过长&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=13, interfaceName='login', title='密码错误-过长', requestHeader='{"X-Lemonban-Media-Type"...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=13, interfaceName='login', title='密码错误-过长', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541763",
+  "pwd": "lemon66666"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=8, interfaceName=&#039;login&#039;, title=&#039;输入未注册的手机号&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=8, interfaceName='login', title='输入未注册的手机号', requestHeader='{"X-Lemonban-Media-Type...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=8, interfaceName='login', title='输入未注册的手机号', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "13323231200",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=14, interfaceName=&#039;login&#039;, title=&#039;密码错误-过短&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=14, interfaceName='login', title='密码错误-过短', requestHeader='{"X-Lemonban-Media-Type"...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=14, interfaceName='login', title='密码错误-过短', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541763",
+  "pwd": "lemon6"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=2, interfaceName=&#039;login&#039;, title=&#039;正常登录&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;le...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=2, interfaceName='login', title='正常登录', requestHeader='{"X-Lemonban-Media-Type":"le...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=2, interfaceName='login', title='正常登录', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "13383026575",
+  "pwd": "lemon666"
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+ "data.leave_amount":0.0
+}', extractResult='{
+  "member_id": "data.id",
+  "token": "data.token_info.token"
+}', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=3, interfaceName=&#039;login&#039;, title=&#039;手机号为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;l...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=3, interfaceName='login', title='手机号为空', requestHeader='{"X-Lemonban-Media-Type":"l...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=3, interfaceName='login', title='手机号为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 1,
+  "msg": "手机号码为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=10, interfaceName=&#039;login&#039;, title=&#039;密码为7位&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:&quot;...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=10, interfaceName='login', title='密码为7位', requestHeader='{"X-Lemonban-Media-Type":"...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=10, interfaceName='login', title='密码为7位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "1515815541764",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(ExcelPojo{caseId=12, interfaceName=&#039;login&#039;, title=&#039;密码错误-不区分大小写&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">
+                  </a> <!-- testLogin(ExcelPojo{caseId=12, interfaceName='login', title='密码错误-不区分大小写', requestHeader='{"X-Lemonban-Media-T...) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(ExcelPojo{caseId=12, interfaceName='login', title='密码错误-不区分大小写', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541764",
+  "pwd": "LEMON666"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">teststeps.NewLoanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=11, interfaceName=&#039;addLoan&#039;, title=&#039;标题为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;:...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=11, interfaceName='addLoan', title='标题为空', requestHeader='{"X-Lemonban-Media-Type":...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=11, interfaceName='addLoan', title='标题为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"",
+    "amount":500000.00,
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 1,
+  "msg": "标题为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=5, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款1000、年化率1%、借款周期1个月、竞标天数1天&#039;, requestHeader...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=5, interfaceName='addLoan', title='正常加标-借款1000、年化率1%、借款周期1个月、竞标天数1天', requestHeader...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=5, interfaceName='addLoan', title='正常加标-借款1000、年化率1%、借款周期1个月、竞标天数1天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买测试课程_1",
+    "amount":1000.00,
+    "loan_rate":1.0,
+    "loan_term":1,
+    "loan_date_type":1,
+    "bidding_days":5
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+    "data.amount": 1000.0,
+    "data.bidding_days": 5,
+    "data.loan_term": 1,
+    "data.title": "购买测试课程_1",
+    "data.loan_rate": 1.0,
+    "data.loan_date_type": 1,
+    "data.status": 1
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=16, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为非100整除的整数&#039;, requestHeader=&#039;{&quot;X-Lemonban-Me...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=16, interfaceName='addLoan', title='借款金额为非100整除的整数', requestHeader='{"X-Lemonban-Me...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=16, interfaceName='addLoan', title='借款金额为非100整除的整数', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1001.00,
+    "loan_rate":23,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款金额范围错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=18, interfaceName=&#039;addLoan&#039;, title=&#039;年利率为0&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=18, interfaceName='addLoan', title='年利率为0', requestHeader='{"X-Lemonban-Media-Type"...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=18, interfaceName='addLoan', title='年利率为0', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":0.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款利率范围错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=27, interfaceName=&#039;addLoan&#039;, title=&#039;竞标天数为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=27, interfaceName='addLoan', title='竞标天数为空', requestHeader='{"X-Lemonban-Media-Type...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=27, interfaceName='addLoan', title='竞标天数为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":3,
+    "loan_date_type":1,
+    "bidding_days":""
+}', expected='{
+  "code": 1,
+  "msg": "竞标期限为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=29, interfaceName=&#039;addLoan&#039;, title=&#039;竞标天数输入0天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=29, interfaceName='addLoan', title='竞标天数输入0天', requestHeader='{"X-Lemonban-Media-Ty...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=29, interfaceName='addLoan', title='竞标天数输入0天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":"3",
+    "loan_date_type":"1",
+    "bidding_days":"0"
+}', expected='{
+  "code": 2,
+  "msg": "竞标期限为1-10天"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=20, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=20, interfaceName='addLoan', title='借款期限为空', requestHeader='{"X-Lemonban-Media-Type...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=20, interfaceName='addLoan', title='借款期限为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":"",
+    "loan_date_type":1,
+    "bidding_days":9
+}', expected='{
+  "code": 1,
+  "msg": "借款期限为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=26, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限类型输入非1、2&#039;, requestHeader=&#039;{&quot;X-Lemonban-Medi...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=26, interfaceName='addLoan', title='借款期限类型输入非1、2', requestHeader='{"X-Lemonban-Medi...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=26, interfaceName='addLoan', title='借款期限类型输入非1、2', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":3,
+    "loan_date_type":3,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款类型不存在"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=12, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=12, interfaceName='addLoan', title='借款金额为空', requestHeader='{"X-Lemonban-Media-Type...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=12, interfaceName='addLoan', title='借款金额为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 1,
+  "msg": "借款金额为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=21, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为0个月&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=21, interfaceName='addLoan', title='借款期限为0个月', requestHeader='{"X-Lemonban-Media-Ty...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=21, interfaceName='addLoan', title='借款期限为0个月', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":"0",
+    "loan_date_type":1,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=25, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限类型不输入&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=25, interfaceName='addLoan', title='借款期限类型不输入', requestHeader='{"X-Lemonban-Media-T...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=25, interfaceName='addLoan', title='借款期限类型不输入', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":3,
+    "loan_date_type":"",
+    "bidding_days":9
+}', expected='{
+  "code": 1,
+  "msg": "借款日期类型为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=13, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为负数&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=13, interfaceName='addLoan', title='借款金额为负数', requestHeader='{"X-Lemonban-Media-Typ...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=13, interfaceName='addLoan', title='借款金额为负数', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":-1000,
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款金额范围错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=23, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为9天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=23, interfaceName='addLoan', title='借款期限为9天', requestHeader='{"X-Lemonban-Media-Typ...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=23, interfaceName='addLoan', title='借款期限为9天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":"9",
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=6, interfaceName=&#039;addLoan&#039;, title=&#039;正常加标-借款1100、年化率24、借款周期36个月、竞标天数10天&#039;, requestHead...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=6, interfaceName='addLoan', title='正常加标-借款1100、年化率24、借款周期36个月、竞标天数10天', requestHead...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=6, interfaceName='addLoan', title='正常加标-借款1100、年化率24、借款周期36个月、竞标天数10天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买测试课程_2",
+    "amount":1100.00,
+    "loan_rate":24.0,
+    "loan_term":36,
+    "loan_date_type":1,
+    "bidding_days":5
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+    "data.amount": 1100.0,
+    "data.bidding_days": 5,
+    "data.loan_term": 36,
+    "data.title": "购买测试课程_2",
+    "data.loan_rate": 24.0,
+    "data.loan_date_type": 1,
+    "data.status": 1
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=14, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为0&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=14, interfaceName='addLoan', title='借款金额为0', requestHeader='{"X-Lemonban-Media-Type...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=14, interfaceName='addLoan', title='借款金额为0', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":0.00,
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款金额范围错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=24, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为46天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=24, interfaceName='addLoan', title='借款期限为46天', requestHeader='{"X-Lemonban-Media-Ty...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=24, interfaceName='addLoan', title='借款期限为46天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":"46",
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=22, interfaceName=&#039;addLoan&#039;, title=&#039;借款期限为37个月&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=22, interfaceName='addLoan', title='借款期限为37个月', requestHeader='{"X-Lemonban-Media-T...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=22, interfaceName='addLoan', title='借款期限为37个月', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":"37",
+    "loan_date_type":1,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=9, interfaceName=&#039;addLoan&#039;, title=&#039;借款人id为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=9, interfaceName='addLoan', title='借款人id为空', requestHeader='{"X-Lemonban-Media-Type...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=9, interfaceName='addLoan', title='借款人id为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "title":"购买测试课程_5",
+    "amount":500000.00,
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 1,
+  "msg": "用户id为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=28, interfaceName=&#039;addLoan&#039;, title=&#039;竞标天数输入超出10天&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=28, interfaceName='addLoan', title='竞标天数输入超出10天', requestHeader='{"X-Lemonban-Media...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=28, interfaceName='addLoan', title='竞标天数输入超出10天', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":23.0,
+    "loan_term":"3",
+    "loan_date_type":"1",
+    "bidding_days":"11"
+}', expected='{
+  "code": 2,
+  "msg": "竞标期限为1-10天"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=10, interfaceName=&#039;addLoan&#039;, title=&#039;借款人id不存在&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=10, interfaceName='addLoan', title='借款人id不存在', requestHeader='{"X-Lemonban-Media-Ty...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=10, interfaceName='addLoan', title='借款人id不存在', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000000000,
+    "title":"购买测试课程_6",
+    "amount":500000.00,
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "会员不存在"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=17, interfaceName=&#039;addLoan&#039;, title=&#039;年利率为空&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Type&quot;...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=17, interfaceName='addLoan', title='年利率为空', requestHeader='{"X-Lemonban-Media-Type"...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=17, interfaceName='addLoan', title='年利率为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 1,
+  "msg": "利率为空"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=19, interfaceName=&#039;addLoan&#039;, title=&#039;年利率大于24&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=19, interfaceName='addLoan', title='年利率大于24', requestHeader='{"X-Lemonban-Media-Typ...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=19, interfaceName='addLoan', title='年利率大于24', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.00,
+    "loan_rate":25.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款利率范围错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLoan(ExcelPojo{caseId=15, interfaceName=&#039;addLoan&#039;, title=&#039;借款金额为小数&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Typ...)">
+                  </a> <!-- testNewLoan(ExcelPojo{caseId=15, interfaceName='addLoan', title='借款金额为小数', requestHeader='{"X-Lemonban-Media-Typ...) -->
+                  <span class="method-name">testNewLoan</span>
+                  <span class="parameters">(ExcelPojo{caseId=15, interfaceName='addLoan', title='借款金额为小数', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODQsImV4cCI6MTYyMDE0MDI3OH0.SB960Brnio2jJgeUEBLT41WPLa0f-avIoTq4d31Hfy720gSaoHq5_jiCa4n5YTjOoF5US6uoCPkJ1ms9DLaZXg"}', method='POST', url='/loan/add', inputParams='{
+    "member_id":1000491584,
+    "title":"购买全栈测试课程_5",
+    "amount":1000.6,
+    "loan_rate":23.0,
+    "loan_term":45,
+    "loan_date_type":2,
+    "bidding_days":9
+}', expected='{
+  "code": 2,
+  "msg": "借款金额范围错误"
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">teststeps.RechargeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRecharge(ExcelPojo{caseId=3, interfaceName=&#039;recharge&#039;, title=&#039;正常充值-50W&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-Ty...)">
+                  </a> <!-- testRecharge(ExcelPojo{caseId=3, interfaceName='recharge', title='正常充值-50W', requestHeader='{"X-Lemonban-Media-Ty...) -->
+                  <span class="method-name">testRecharge</span>
+                  <span class="parameters">(ExcelPojo{caseId=3, interfaceName='recharge', title='正常充值-50W', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v3","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODUsImV4cCI6MTYyMDE0MDI4NH0.ct08O55VgNJZe9dkhulaVYFez9QmbQuRsv1XbhiyMkmWrkO2w4pX7XDadelffOQSoRXqcUiylr0fHl8ZEJ5OSA"}', method='POST', url='/member/recharge', inputParams='{
+  "member_id": 1000491585,
+  "amount": 500000.0,
+  "timestamp":1620139984,
+  "sign":"sE/AOuF6JbJKtWcmrG9sZGRA67z/LpZsnsLOfGYFIx+ekz0vKsoVL9jMoLyuOMt1hGTMnkQR/cQU
+KSnZjLihSpvaI+I9rcy/dz/D3phYxjEvdCpyAJg80pqaM8q8pqRxOTbwbsGLT/HjgcKO9FkzRhek
+V7Fl1AhXsH6chT3EI/w=
+"
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+"data.leave_amount":500000.0
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRecharge(ExcelPojo{caseId=4, interfaceName=&#039;recharge&#039;, title=&#039;正常充值-0.01&#039;, requestHeader=&#039;{&quot;X-Lemonban-Media-T...)">
+                  </a> <!-- testRecharge(ExcelPojo{caseId=4, interfaceName='recharge', title='正常充值-0.01', requestHeader='{"X-Lemonban-Media-T...) -->
+                  <span class="method-name">testRecharge</span>
+                  <span class="parameters">(ExcelPojo{caseId=4, interfaceName='recharge', title='正常充值-0.01', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v3","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTE1ODUsImV4cCI6MTYyMDE0MDI4NH0.ct08O55VgNJZe9dkhulaVYFez9QmbQuRsv1XbhiyMkmWrkO2w4pX7XDadelffOQSoRXqcUiylr0fHl8ZEJ5OSA"}', method='POST', url='/member/recharge', inputParams='{
+  "member_id": 1000491585,
+  "amount": 0.01,
+  "timestamp":1620139984,
+  "sign":"thSylhWh0FFspKfPMrektrRdOwZMGcyGogEIZOZ1yNOFrs7uScvdiZ+wOKwN9In622UHF0m8u+vX
+zTwcZH8OAfxrjdzFzoDGagRYD/pW6nHJFO2+D3QGtyu2ts6uWzLssGxai2L6lh6olwht7jtO31ET
+XO5wHFbJIw1udJQZVHQ=
+"
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+"data.leave_amount":500000.01
+}', extractResult='null', dbAssert='null'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+        </div> <!-- panel Test_Suite -->
+        <div panel-name="test-xml-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\lemon\lemon_class\APIcode\Myapiproject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test case&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teststeps.LoginTest&quot;/&gt;
+      &lt;class name=&quot;teststeps.NewLoanTest&quot;/&gt;
+      &lt;class name=&quot;teststeps.RechargeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test case --&gt;
+&lt;/suite&gt; &lt;!-- Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test case (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_Suite');
+function tableData_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(40);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'teststeps.LoginTest')
+data.setCell(0, 3, 453);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'teststeps.LoginTest')
+data.setCell(1, 3, 407);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin')
+data.setCell(2, 2, 'teststeps.LoginTest')
+data.setCell(2, 3, 406);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogin')
+data.setCell(3, 2, 'teststeps.LoginTest')
+data.setCell(3, 3, 391);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'teststeps.LoginTest')
+data.setCell(4, 3, 390);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testNewLoan')
+data.setCell(5, 2, 'teststeps.NewLoanTest')
+data.setCell(5, 3, 390);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testNewLoan')
+data.setCell(6, 2, 'teststeps.NewLoanTest')
+data.setCell(6, 3, 374);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLogin')
+data.setCell(7, 2, 'teststeps.LoginTest')
+data.setCell(7, 3, 359);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testNewLoan')
+data.setCell(8, 2, 'teststeps.NewLoanTest')
+data.setCell(8, 3, 329);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testRecharge')
+data.setCell(9, 2, 'teststeps.RechargeTest')
+data.setCell(9, 3, 265);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testNewLoan')
+data.setCell(10, 2, 'teststeps.NewLoanTest')
+data.setCell(10, 3, 265);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testNewLoan')
+data.setCell(11, 2, 'teststeps.NewLoanTest')
+data.setCell(11, 3, 219);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testNewLoan')
+data.setCell(12, 2, 'teststeps.NewLoanTest')
+data.setCell(12, 3, 203);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testNewLoan')
+data.setCell(13, 2, 'teststeps.NewLoanTest')
+data.setCell(13, 3, 203);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testNewLoan')
+data.setCell(14, 2, 'teststeps.NewLoanTest')
+data.setCell(14, 3, 188);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testNewLoan')
+data.setCell(15, 2, 'teststeps.NewLoanTest')
+data.setCell(15, 3, 188);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testLogin')
+data.setCell(16, 2, 'teststeps.LoginTest')
+data.setCell(16, 3, 187);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testLogin')
+data.setCell(17, 2, 'teststeps.LoginTest')
+data.setCell(17, 3, 187);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testNewLoan')
+data.setCell(18, 2, 'teststeps.NewLoanTest')
+data.setCell(18, 3, 187);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testNewLoan')
+data.setCell(19, 2, 'teststeps.NewLoanTest')
+data.setCell(19, 3, 187);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testNewLoan')
+data.setCell(20, 2, 'teststeps.NewLoanTest')
+data.setCell(20, 3, 187);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testNewLoan')
+data.setCell(21, 2, 'teststeps.NewLoanTest')
+data.setCell(21, 3, 172);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testLogin')
+data.setCell(22, 2, 'teststeps.LoginTest')
+data.setCell(22, 3, 172);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testLogin')
+data.setCell(23, 2, 'teststeps.LoginTest')
+data.setCell(23, 3, 172);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testNewLoan')
+data.setCell(24, 2, 'teststeps.NewLoanTest')
+data.setCell(24, 3, 172);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testLogin')
+data.setCell(25, 2, 'teststeps.LoginTest')
+data.setCell(25, 3, 172);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testNewLoan')
+data.setCell(26, 2, 'teststeps.NewLoanTest')
+data.setCell(26, 3, 171);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testLogin')
+data.setCell(27, 2, 'teststeps.LoginTest')
+data.setCell(27, 3, 156);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testNewLoan')
+data.setCell(28, 2, 'teststeps.NewLoanTest')
+data.setCell(28, 3, 156);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testRecharge')
+data.setCell(29, 2, 'teststeps.RechargeTest')
+data.setCell(29, 3, 156);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testNewLoan')
+data.setCell(30, 2, 'teststeps.NewLoanTest')
+data.setCell(30, 3, 141);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testNewLoan')
+data.setCell(31, 2, 'teststeps.NewLoanTest')
+data.setCell(31, 3, 141);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testNewLoan')
+data.setCell(32, 2, 'teststeps.NewLoanTest')
+data.setCell(32, 3, 141);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testNewLoan')
+data.setCell(33, 2, 'teststeps.NewLoanTest')
+data.setCell(33, 3, 141);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testNewLoan')
+data.setCell(34, 2, 'teststeps.NewLoanTest')
+data.setCell(34, 3, 141);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testLogin')
+data.setCell(35, 2, 'teststeps.LoginTest')
+data.setCell(35, 3, 141);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testNewLoan')
+data.setCell(36, 2, 'teststeps.NewLoanTest')
+data.setCell(36, 3, 140);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testNewLoan')
+data.setCell(37, 2, 'teststeps.NewLoanTest')
+data.setCell(37, 3, 140);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testNewLoan')
+data.setCell(38, 2, 'teststeps.NewLoanTest')
+data.setCell(38, 3, 140);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testNewLoan')
+data.setCell(39, 2, 'teststeps.NewLoanTest')
+data.setCell(39, 3, 124);
+window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Test_Suite">
+              </div> <!-- times-div-Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teststeps.NewLoanTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">GlobalSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teststeps.RechargeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">GlobalSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">teststeps.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">GlobalSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1109 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=2, interfaceName='login', title='正常登录', requestHeader='{"X-Lemonban-Media-Type":"le...)</span>
+                <span class="method-start">7686 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=3, interfaceName='login', title='手机号为空', requestHeader='{"X-Lemonban-Media-Type":"l...)</span>
+                <span class="method-start">8279 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=4, interfaceName='login', title='手机号为10位', requestHeader='{"X-Lemonban-Media-Type":...)</span>
+                <span class="method-start">8451 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=5, interfaceName='login', title='手机号为12位', requestHeader='{"X-Lemonban-Media-Type":...)</span>
+                <span class="method-start">8623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=6, interfaceName='login', title='手机号包含非数字', requestHeader='{"X-Lemonban-Media-Type"...)</span>
+                <span class="method-start">8795 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=7, interfaceName='login', title='不存在的号段', requestHeader='{"X-Lemonban-Media-Type":"...)</span>
+                <span class="method-start">8982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=8, interfaceName='login', title='输入未注册的手机号', requestHeader='{"X-Lemonban-Media-Type...)</span>
+                <span class="method-start">9154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=9, interfaceName='login', title='密码为空', requestHeader='{"X-Lemonban-Media-Type":"le...)</span>
+                <span class="method-start">9545 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=10, interfaceName='login', title='密码为7位', requestHeader='{"X-Lemonban-Media-Type":"...)</span>
+                <span class="method-start">9732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=11, interfaceName='login', title='密码为17位', requestHeader='{"X-Lemonban-Media-Type":...)</span>
+                <span class="method-start">9873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=12, interfaceName='login', title='密码错误-不区分大小写', requestHeader='{"X-Lemonban-Media-T...)</span>
+                <span class="method-start">10263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=13, interfaceName='login', title='密码错误-过长', requestHeader='{"X-Lemonban-Media-Type"...)</span>
+                <span class="method-start">10622 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(ExcelPojo{caseId=14, interfaceName='login', title='密码错误-过短', requestHeader='{"X-Lemonban-Media-Type"...)</span>
+                <span class="method-start">11029 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teststeps.NewLoanTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11435 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=5, interfaceName='addLoan', title='正常加标-借款1000、年化率1%、借款周期1个月、竞标天数1天', requestHeader...)</span>
+                <span class="method-start">14372 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=6, interfaceName='addLoan', title='正常加标-借款1100、年化率24、借款周期36个月、竞标天数10天', requestHead...)</span>
+                <span class="method-start">14746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=7, interfaceName='addLoan', title='正常加标-借款500000、年化率2、借款周期10天、竞标天数2天', requestHeade...)</span>
+                <span class="method-start">15075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=8, interfaceName='addLoan', title='正常加标-借款100000、年化率23、借款周期45天、竞标天数5天', requestHead...)</span>
+                <span class="method-start">15434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=9, interfaceName='addLoan', title='借款人id为空', requestHeader='{"X-Lemonban-Media-Type...)</span>
+                <span class="method-start">15856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=10, interfaceName='addLoan', title='借款人id不存在', requestHeader='{"X-Lemonban-Media-Ty...)</span>
+                <span class="method-start">16027 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=11, interfaceName='addLoan', title='标题为空', requestHeader='{"X-Lemonban-Media-Type":...)</span>
+                <span class="method-start">16246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=12, interfaceName='addLoan', title='借款金额为空', requestHeader='{"X-Lemonban-Media-Type...)</span>
+                <span class="method-start">16418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=13, interfaceName='addLoan', title='借款金额为负数', requestHeader='{"X-Lemonban-Media-Typ...)</span>
+                <span class="method-start">16621 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=14, interfaceName='addLoan', title='借款金额为0', requestHeader='{"X-Lemonban-Media-Type...)</span>
+                <span class="method-start">16762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=15, interfaceName='addLoan', title='借款金额为小数', requestHeader='{"X-Lemonban-Media-Typ...)</span>
+                <span class="method-start">16902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=16, interfaceName='addLoan', title='借款金额为非100整除的整数', requestHeader='{"X-Lemonban-Me...)</span>
+                <span class="method-start">17090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=17, interfaceName='addLoan', title='年利率为空', requestHeader='{"X-Lemonban-Media-Type"...)</span>
+                <span class="method-start">17262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=18, interfaceName='addLoan', title='年利率为0', requestHeader='{"X-Lemonban-Media-Type"...)</span>
+                <span class="method-start">17386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=19, interfaceName='addLoan', title='年利率大于24', requestHeader='{"X-Lemonban-Media-Typ...)</span>
+                <span class="method-start">17527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=20, interfaceName='addLoan', title='借款期限为空', requestHeader='{"X-Lemonban-Media-Type...)</span>
+                <span class="method-start">17668 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=21, interfaceName='addLoan', title='借款期限为0个月', requestHeader='{"X-Lemonban-Media-Ty...)</span>
+                <span class="method-start">17808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=22, interfaceName='addLoan', title='借款期限为37个月', requestHeader='{"X-Lemonban-Media-T...)</span>
+                <span class="method-start">17964 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=23, interfaceName='addLoan', title='借款期限为9天', requestHeader='{"X-Lemonban-Media-Typ...)</span>
+                <span class="method-start">18152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=24, interfaceName='addLoan', title='借款期限为46天', requestHeader='{"X-Lemonban-Media-Ty...)</span>
+                <span class="method-start">18339 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=25, interfaceName='addLoan', title='借款期限类型不输入', requestHeader='{"X-Lemonban-Media-T...)</span>
+                <span class="method-start">18496 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=26, interfaceName='addLoan', title='借款期限类型输入非1、2', requestHeader='{"X-Lemonban-Medi...)</span>
+                <span class="method-start">18636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=27, interfaceName='addLoan', title='竞标天数为空', requestHeader='{"X-Lemonban-Media-Type...)</span>
+                <span class="method-start">18839 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=28, interfaceName='addLoan', title='竞标天数输入超出10天', requestHeader='{"X-Lemonban-Media...)</span>
+                <span class="method-start">19027 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLoan(ExcelPojo{caseId=29, interfaceName='addLoan', title='竞标天数输入0天', requestHeader='{"X-Lemonban-Media-Ty...)</span>
+                <span class="method-start">19214 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teststeps.RechargeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">19433 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testRecharge(ExcelPojo{caseId=3, interfaceName='recharge', title='正常充值-50W', requestHeader='{"X-Lemonban-Media-Ty...)</span>
+                <span class="method-start">20808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRecharge(ExcelPojo{caseId=4, interfaceName='recharge', title='正常充值-0.01', requestHeader='{"X-Lemonban-Media-T...)</span>
+                <span class="method-start">21073 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

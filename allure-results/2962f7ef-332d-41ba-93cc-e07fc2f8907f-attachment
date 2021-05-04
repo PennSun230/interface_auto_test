@@ -1,0 +1,36 @@
+Request method:	POST
+Request URI:	http://api.lemonban.com/futureloan/loan/add
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA0OTAyNTYsImV4cCI6MTYxOTk3NTc3MX0.jvU_ebxIYI-dG-3_wBiB1JfOk-xP4H5kS2A4GPYha3ELU8cCisrgrLak498WTNlIAKx7v2ElSxW0NUBhkG_P_A
+				X-Lemonban-Media-Type=lemonban.v2
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "member_id": 1000490256,
+    "title": "购买全栈测试课程_5",
+    "amount": 1000.00,
+    "loan_rate": 23.0,
+    "loan_term": 3,
+    "loan_date_type": 1,
+    "bidding_days": ""
+}
+HTTP/1.1 200 
+Server: nginx/1.4.2
+Date: Sun, 02 May 2021 17:11:17 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    "code": 1,
+    "msg": "竞标期限为空",
+    "data": null,
+    "copyright": "Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"
+}
