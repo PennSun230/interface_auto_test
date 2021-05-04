@@ -49,9 +49,16 @@ public class LoginTest extends BaseTest {
 
     }
 
+<<<<<<< HEAD
 //    @AfterTest
 //    public void teardown(){
 //
 //    }
+=======
+    @AfterTest
+    public void teardown(){
+
+    }
+>>>>>>> d98b6b91323e63e11f7b2afef7f37797bab36148
 
 }

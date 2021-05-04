@@ -50,11 +50,19 @@ public class BaseTest {
     public Response request(ExcelPojo excelData, String interfaceModuleName) {
         String logFilePath;
         if(Constants.LOG_TO_FILE ){
+<<<<<<< HEAD
             File dirPath =new File(System.getProperty("user.dir")+"//log//"+interfaceModuleName );
             if (!dirPath.exists()){
                 dirPath.mkdirs() ;
             }
             logFilePath =dirPath +"//test"+excelData.getCaseId() +".log";
+=======
+            File dirPath =new File(System.getProperty("user.dir")+"\\log\\"+interfaceModuleName );
+            if (!dirPath.exists()){
+                dirPath.mkdirs() ;
+            }
+            logFilePath =dirPath +"\\test"+excelData.getCaseId() +".log";
+>>>>>>> d98b6b91323e63e11f7b2afef7f37797bab36148
             PrintStream fileOutPutStream = null;
             try{
                 //PrintStream 是打印流的意思
